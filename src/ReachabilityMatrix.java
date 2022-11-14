@@ -24,17 +24,17 @@ public class ReachabilityMatrix {
     public static void main(String[] args) {
 
         int option;
-        boolean first1 = true;
+        boolean firstRun = true;
 
         // Make user press 1 first
-        while (first1) {
+        while (firstRun) {
 
             printMenu();
             int choice = input.nextInt();
 
             if (choice == 1) {
                 readInputMatrix();
-                first1 = false;
+                firstRun = false;
             } else if (choice == 3) {
                 System.exit(-1);
             } else {
