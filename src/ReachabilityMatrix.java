@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 public class ReachabilityMatrix {
 
+    // Variable definitions
     static int inputSize, sum = 0;
     static int pathLen1, pathLen2, pathLen3, pathLen4, pathLen5 = 0;
     static int cycleLen1, cycleLen2, cycleLen3, cycleLen4, cycleLen5 = 0;
@@ -38,7 +39,7 @@ public class ReachabilityMatrix {
             } else if (choice == 3) {
                 System.exit(-1);
             } else {
-                System.out.println("\nError: Must choose option #1 before proceeding\n");
+                System.out.println("\nError: You must choose option #1 before proceeding\n");
             }
         }
 
