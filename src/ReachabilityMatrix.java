@@ -163,6 +163,7 @@ public class ReachabilityMatrix {
         System.out.print("\nEnter option number: ");
     }
 
+    // Print the matrix
     public static void printMatrix(int[][] m) {
 
         for (int i = 0; i < inputSize; i++) {
@@ -176,6 +177,7 @@ public class ReachabilityMatrix {
         System.out.println();
     }
 
+    // Read in the matrix from user
     public static void readInputMatrix() {
 
         System.out.print("Enter Matrix size (1-5): ");
@@ -191,6 +193,7 @@ public class ReachabilityMatrix {
         System.out.println();
     }
 
+    // calculate in degree
     public static void inDegree() {
 
         System.out.println("In-degrees: ");
@@ -204,6 +207,7 @@ public class ReachabilityMatrix {
         System.out.println();
     }
 
+    // calculate out degree
     public static void outDegree() {
 
         System.out.println("Out-degrees: ");
@@ -222,6 +226,7 @@ public class ReachabilityMatrix {
         System.out.println();
     }
 
+    // calculate selfLoops
     public static void selfLoops() {
         sum = 0;
 
@@ -234,6 +239,7 @@ public class ReachabilityMatrix {
         System.out.println(sum);
     }
 
+    // Calculate the reachability matrix
     public static void reachabilityMatrix() {
 
         // A2
@@ -338,6 +344,7 @@ public class ReachabilityMatrix {
         }
     }
 
+    // reset the matrix to all zeros so it reruns correctly
     public static void zeroMatrix(int[][] matrix) {
 
         for (int i = 0; i < inputSize; i++) {
