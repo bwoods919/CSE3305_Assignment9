@@ -56,6 +56,9 @@ public class ReachabilityMatrix {
                     input.close();
                     System.exit(255);
                 }
+                default -> {
+                    System.out.println("Invalid option\n");
+                }
             }
         }
     }
