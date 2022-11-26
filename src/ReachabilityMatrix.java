@@ -65,7 +65,7 @@ public class ReachabilityMatrix {
     }
 
     public static void option2() {
-        System.out.print("Input Matrix:");
+        System.out.print("\nInput Matrix:\n");
         printMatrix(A1);
 
         reachabilityMatrix();
@@ -131,6 +131,8 @@ public class ReachabilityMatrix {
                         (cycleLen1 + cycleLen2 + cycleLen3 + cycleLen4 + cycleLen5));
                 System.out.println();
             }
+
+            
         }
 
         // Reset values will give the wrong value otherwise
@@ -181,8 +183,18 @@ public class ReachabilityMatrix {
     // Read in the matrix from user
     public static void readInputMatrix() {
 
-        System.out.print("Enter Matrix size (1-5): ");
-        inputSize = input.nextInt();
+        boolean isGood = false;
+
+        while (!isGood) {
+            System.out.print("\nEnter Matrix size (1-5): ");
+            inputSize = input.nextInt();
+
+            if (inputSize == 1 || inputSize == 2 || inputSize == 3 || inputSize == 4 || inputSize == 5) {
+                isGood = true;
+            } else {
+                System.out.println("Invalid Option: you must choose an option 1 - 5");
+            }
+        }
 
         for (int i = 0; i < inputSize; i++) {
             for (int j = 0; j < inputSize; j++) {
